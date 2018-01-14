@@ -6,7 +6,7 @@
 
 
 
-char clear_exit(int *a , int *b, int *result);
+char clear_exit(float *a , float *b, float *result);
 
 int main(){
 	
@@ -31,17 +31,17 @@ int main(){
 				printf("SUM: \n");
 				if(choice !='N'){
 				
-				scanf("%d",&a);
+				scanf("%f",&a);
 				
 				}else{
 					
-					printf("%d",result);
+					printf("%.2f",result);
 					
 				}
 				printf(" + ");
-				scanf("%d",&b);
+				scanf("%f",&b);
 				result = a + b;
-				printf("= %d",result);
+				printf("= %.2f",result);
 				
 				printf("\nC - CLEAR \nE - exit");
 				
@@ -57,17 +57,17 @@ int main(){
 				printf("SUB: \n");
 				if(choice !='N'){
 				
-				scanf("%d",&a);
+				scanf("%f",&a);
 				
 				}else{
 					
-					printf("%d",result);
+					printf("%.2f",result);
 					
 				}
 				printf(" - ");
-				scanf("%d",&b);
+				scanf("%f",&b);
 				result = a - b;
-				printf("= %d",result);
+				printf("= %.2f",result);
 				
 				printf("\nC - CLEAR \nE - exit");
 				
@@ -88,7 +88,7 @@ int main(){
 
 
 
-char clear_exit(int *a , int *b, int *result){
+char clear_exit(float *a , float *b, float *result){
 	
 	
 	switch(toupper(getch())){
