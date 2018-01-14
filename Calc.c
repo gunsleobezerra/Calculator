@@ -10,6 +10,8 @@ char clear_exit(int *a , int *b, int *result);
 
 int main(){
 	
+	system("color 0A");
+	
 	int a=0,b=0,result;
 	char choice;
 	do{
