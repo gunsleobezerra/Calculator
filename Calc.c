@@ -8,9 +8,11 @@
 
 char clear_exit(int *a , int *b, int *result);
 
+
+
 int main(){
 	
-	system("color 0A");
+	
 	
 	int a=0,b=0,result;
 	char choice;
@@ -19,8 +21,8 @@ int main(){
 		system("clear");
 		printf("Select operation: \n\n");
 		
-		printf("A - SUM \nB - SUBTRACTION \nE - exit");
-		choice = getch();
+		printf("A - SUM \nB - SUBTRACTION \nE - exit \n :" );
+		scanf("%c",&choice);
 		switch(toupper(choice)){
 			
 			
@@ -87,15 +89,15 @@ int main(){
 }
 
 
-
 char clear_exit(int *a , int *b, int *result){
-	
-	
-	switch(toupper(getch())){
+	char ch;
+	printf("\n : ");
+	scanf("%c",&ch);
+	switch(toupper(ch)){
 		
 		case 'E':
 			return 'E';
-		break;
+		break;char ch;
 		
 		case 'C':
 			*a = 0;
