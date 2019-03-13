@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+
 #include<conio.h>
 #include <math.h>
 #include <ctype.h>
@@ -16,7 +16,7 @@ int main(){
 	char choice;
 	do{
 	
-		system("cls");
+		system("clear");
 		printf("Select operation: \n\n");
 		
 		printf("A - SUM \nB - SUBTRACTION \nE - exit");
@@ -27,7 +27,7 @@ int main(){
 			
 			case 'A':
 			do{
-				system("cls");
+				system("clear");
 				printf("SUM: \n");
 				if(choice !='N'){
 				
@@ -53,7 +53,7 @@ int main(){
 			
 			case 'B':
 				do{
-				system("cls");
+				system("clear");
 				printf("SUB: \n");
 				if(choice !='N'){
 				
